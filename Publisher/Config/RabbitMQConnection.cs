@@ -18,7 +18,7 @@ namespace Messaging {
             // See https://www.rabbitmq.com/dotnet-api-guide.html#consuming-async
             connectionFactory.DispatchConsumersAsync = true;
             // See https://www.rabbitmq.com/dotnet-api-guide.html#client-provided-names
-            connectionFactory.ClientProvidedName = "demo:consumer";
+            connectionFactory.ClientProvidedName = "demo:publisher";
 
             _connection = connectionFactory.CreateConnection();
         }
